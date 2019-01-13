@@ -100,7 +100,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2019-01-06</span>
-            <span class="time">22:15:11</span>
+            <span class="time">23:01:51</span>
           </span>
           
         </div>
@@ -108,8 +108,45 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          <p>Hello World,Test!</p>
-
+          <h1 id="学习Markdown语法"><a href="#学习Markdown语法" class="headerlink" title="学习Markdown语法"></a>学习Markdown语法</h1><h2 id="标题学习"><a href="#标题学习" class="headerlink" title="标题学习"></a>标题学习</h2><p><code>Markdown</code>支持两种标题的语法，类Setext和类atx形式<br>类<code>Setext</code>形式是用底线的形式，利用=（最高阶标题）和-（第二标题），eg:    </p>
+<pre><code>这是一个H1
+=========
+这是一个H2
+---------
+</code></pre><p>任何数量的=和-都可以有效果<br>类<code>Atx</code>形式则是在行首插入1到6个#，对应到标题1到6阶，eg:        </p>
+<pre><code># 这是H1    
+## 这是H2    
+### 这是H3
+...
+###### 这是H6   
+</code></pre><p>##实现情况：          </p>
+<h1 id="这是H1"><a href="#这是H1" class="headerlink" title="这是H1"></a>这是H1</h1><h2 id="这是H2"><a href="#这是H2" class="headerlink" title="这是H2"></a>这是H2</h2><h3 id="这是H3"><a href="#这是H3" class="headerlink" title="这是H3"></a>这是H3</h3><h4 id="这是H4"><a href="#这是H4" class="headerlink" title="这是H4"></a>这是H4</h4><h5 id="这是H5"><a href="#这是H5" class="headerlink" title="这是H5"></a>这是H5</h5><h6 id="这是H6"><a href="#这是H6" class="headerlink" title="这是H6"></a>这是H6</h6><hr>
+<p>你可以选择闭合性的类<code>atx</code>样式的标题，只是为了美观，类似html的语言！：</p>
+<pre><code># 这是H1 #
+## 这是H2 ##
+</code></pre><h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><p><code>Markdown</code>标记区块引用是使用类似email中用&gt;的引用方式</p>
+<blockquote>
+<p>这是一个区块引用的例子,   </p>
+<p>我也是一个区块引用的例子<br>看到我前面的那一条东西了吗？<br>那就是效果</p>
+</blockquote>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>&gt;这是一个区块引用的例子,   
+&gt;
+&gt;我也是一个区块引用的例子
+&gt;看到我前面的那一条东西了吗？   
+&gt;那就是效果
+</code></pre><p>区块引用可以嵌套，只要根据层次加上不同数量的&gt;<br>这是一个可以嵌套的例子</p>
+<blockquote>
+<p>这是第一个区块</p>
+<blockquote>
+<p>这是第二区块</p>
+</blockquote>
+<p>回到第一个区块！厉害吧</p>
+</blockquote>
+<h2 id="代码如下-1"><a href="#代码如下-1" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>&gt;这是第一个区块
+&gt;&gt;这是第二区块
+&gt;
+&gt;回到第一个区块！厉害吧
+</code></pre>
         </div>
       </div>
     </div>
