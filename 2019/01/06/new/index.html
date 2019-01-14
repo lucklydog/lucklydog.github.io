@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="new">
+  <meta property="og:title" content="Hexo">
   <meta property="og:description" content="">
   <meta property="og:site_name" content="Hexo">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="http://yoursite.com">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">new</p>
+          <p class="title">无标题文章</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -100,7 +100,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2019-01-06</span>
-            <span class="time">23:01:51</span>
+            <span class="time">16:41:14</span>
           </span>
           
         </div>
@@ -108,7 +108,7 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          <h1 id="学习Markdown语法"><a href="#学习Markdown语法" class="headerlink" title="学习Markdown语法"></a>学习Markdown语法</h1><h2 id="标题学习"><a href="#标题学习" class="headerlink" title="标题学习"></a>标题学习</h2><p><code>Markdown</code>支持两种标题的语法，类Setext和类atx形式<br>类<code>Setext</code>形式是用底线的形式，利用=（最高阶标题）和-（第二标题），eg:    </p>
+          <h1 id="学习Markdown语法"><a href="#学习Markdown语法" class="headerlink" title="学习Markdown语法"></a>学习Markdown语法</h1><h2 id="1、标题学习"><a href="#1、标题学习" class="headerlink" title="1、标题学习"></a>1、标题学习</h2><p><code>Markdown</code>支持两种标题的语法，类Setext和类atx形式<br>类<code>Setext</code>形式是用底线的形式，利用=（最高阶标题）和-（第二标题），eg:    </p>
 <pre><code>这是一个H1
 =========
 这是一个H2
@@ -119,34 +119,139 @@
 ### 这是H3
 ...
 ###### 这是H6   
-</code></pre><p>##实现情况：          </p>
+</code></pre><h2 id="实现情况："><a href="#实现情况：" class="headerlink" title="实现情况："></a>实现情况：</h2><hr>
 <h1 id="这是H1"><a href="#这是H1" class="headerlink" title="这是H1"></a>这是H1</h1><h2 id="这是H2"><a href="#这是H2" class="headerlink" title="这是H2"></a>这是H2</h2><h3 id="这是H3"><a href="#这是H3" class="headerlink" title="这是H3"></a>这是H3</h3><h4 id="这是H4"><a href="#这是H4" class="headerlink" title="这是H4"></a>这是H4</h4><h5 id="这是H5"><a href="#这是H5" class="headerlink" title="这是H5"></a>这是H5</h5><h6 id="这是H6"><a href="#这是H6" class="headerlink" title="这是H6"></a>这是H6</h6><hr>
 <p>你可以选择闭合性的类<code>atx</code>样式的标题，只是为了美观，类似html的语言！：</p>
 <pre><code># 这是H1 #
 ## 这是H2 ##
-</code></pre><h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><p><code>Markdown</code>标记区块引用是使用类似email中用&gt;的引用方式</p>
+</code></pre><h2 id="2、学习段落"><a href="#2、学习段落" class="headerlink" title="2、学习段落"></a>2、学习段落</h2><p>段落的前后要有空行，所谓的空行是指没有文字的内容。若想要在段内强制换行的方式是使用<strong>两个以上</strong>的空格加上回车（引用中换行省略回车）</p>
+<h2 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下"></a>效果如下</h2><p>我是第一段</p>
+<p>我是第二段<br>或者是这样</p>
+<p>##代码如下<br>    我是第一段</p>
+<pre><code>我是第二段   
+或者是这样
+</code></pre><hr>
+<h2 id="3、学习区块引用"><a href="#3、学习区块引用" class="headerlink" title="3、学习区块引用"></a>3、学习区块引用</h2><p><code>Markdown</code>标记区块引用是使用类似email中用&gt;的引用方式</p>
 <blockquote>
 <p>这是一个区块引用的例子,   </p>
 <p>我也是一个区块引用的例子<br>看到我前面的那一条东西了吗？<br>那就是效果</p>
 </blockquote>
-<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>&gt;这是一个区块引用的例子,   
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><hr>
+<pre><code>&gt;这是一个区块引用的例子,   
 &gt;
 &gt;我也是一个区块引用的例子
 &gt;看到我前面的那一条东西了吗？   
 &gt;那就是效果
-</code></pre><p>区块引用可以嵌套，只要根据层次加上不同数量的&gt;<br>这是一个可以嵌套的例子</p>
+</code></pre><p>区块引用可以<strong>嵌套</strong>，只要根据层次加上不同数量的&gt;<br>这是一个可以嵌套的例子</p>
 <blockquote>
 <p>这是第一个区块</p>
 <blockquote>
 <p>这是第二区块</p>
+<blockquote>
+<p>这是第三个区块</p>
+</blockquote>
 </blockquote>
 <p>回到第一个区块！厉害吧</p>
 </blockquote>
 <h2 id="代码如下-1"><a href="#代码如下-1" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>&gt;这是第一个区块
 &gt;&gt;这是第二区块
+&gt;&gt;&gt;这是第三个区块
 &gt;
 &gt;回到第一个区块！厉害吧
-</code></pre>
+</code></pre><h2 id="4、学习代码区块"><a href="#4、学习代码区块" class="headerlink" title="4、学习代码区块"></a>4、学习代码区块</h2><p>代码区块的建立是在每行加上4个空格或者是一个制表符。如：</p>
+<pre><code>void main(){
+System.out.println(&quot;hello,markdown!&quot;);
+}
+</code></pre><h2 id="代码如下-2"><a href="#代码如下-2" class="headerlink" title="代码如下"></a>代码如下</h2><hr>
+<pre><code>(`tab`)void main(){
+(`tab`)System.out.println(&quot;hello,markdown!&quot;);
+(`tab`)}
+</code></pre><p><strong>tip</strong>:需要和普通段落之间存在空行</p>
+<h2 id="5、学习强调"><a href="#5、学习强调" class="headerlink" title="5、学习强调"></a>5、学习强调</h2><p>在强调内容两侧分别加上<code>*</code>或者<code>_</code>,如：</p>
+<p><em>斜体</em>,_斜体_<br><strong>加粗</strong>，<strong>加粗</strong>    </p>
+<h2 id="代码如下-3"><a href="#代码如下-3" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>*斜体*,_斜体_  
+**加粗**，__加粗__    
+</code></pre><h2 id="6、学习列表"><a href="#6、学习列表" class="headerlink" title="6、学习列表"></a>6、学习列表</h2><p>使用<code>.</code>、<code>+</code>或<code>-</code>标记无须列表，如：</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+</ul>
+<ul>
+<li>第一项   </li>
+<li>第二项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+</ul>
+<h2 id="代码如下-4"><a href="#代码如下-4" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>- 第一项
+- 第二项
+
++ 第一项   
++ 第二项
+
+* 第一项
+* 第二项
+</code></pre><p>有序列表的标记方式是将上述的符号换成数字，并辅助以<code>.</code>，如：</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<h2 id="代码如下-5"><a href="#代码如下-5" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>1. 第一项
+2. 第二项
+</code></pre><p><strong>tip</strong> 标记后面最少有一个<code>空格</code>或者<code>tab</code>，若不在代码引用区块内，必须和前方的段落之间存在空行。</p>
+<h2 id="7、学习分割线"><a href="#7、学习分割线" class="headerlink" title="7、学习分割线"></a>7、学习分割线</h2><hr>
+<p>分割线最常使用的就是<strong>三个</strong>或者三个以上的<code>*</code>,还可以使用<code>-</code>或<code>_</code>.</p>
+<hr>
+<hr>
+<hr>
+<h2 id="代码如下-6"><a href="#代码如下-6" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>***
+___
+---
+</code></pre><h2 id="8、学习链接"><a href="#8、学习链接" class="headerlink" title="8、学习链接"></a>8、学习链接</h2><hr>
+<p>链接有<strong>行内链接</strong>和<strong>参考式</strong></p>
+<h3 id="行内链接"><a href="#行内链接" class="headerlink" title="行内链接"></a>行内链接</h3><p><a href="https://lucklydog.github.io/2019/01/06/new/" target="_blank" rel="noopener">retemin的博客</a></p>
+<h2 id="代码如下-7"><a href="#代码如下-7" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>[retemin的博客](https://lucklydog.github.io/2019/01/06/new/)
+</code></pre><h3 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h3><p>[retemin的博客][1]<br>[1]:<a href="https://lucklydog.github.io/2019/01/06/new/" target="_blank" rel="noopener">https://lucklydog.github.io/2019/01/06/new/</a></p>
+<h2 id="代码如下-8"><a href="#代码如下-8" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>[retemin的博客][1]
+[1]:https://lucklydog.github.io/2019/01/06/new/
+</code></pre><h2 id="9、图片连接"><a href="#9、图片连接" class="headerlink" title="9、图片连接"></a>9、图片连接</h2><hr>
+<p>添加图片的形式和链接相似，只需要在链接的基础上前方加一个<code>！</code>如：</p>
+<p>! <a href="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1547453926&amp;di=013d44121686c62d6a0ba8432af5de96&amp;src=http://pic3.16pic.com/00/55/43/16pic_5543165_b.jpg" target="_blank" rel="noopener">https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1547453926&amp;di=013d44121686c62d6a0ba8432af5de96&amp;src=http://pic3.16pic.com/00/55/43/16pic_5543165_b.jpg</a></p>
+<h2 id="代码如下-9"><a href="#代码如下-9" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>！https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1547453926&amp;di=013d44121686c62d6a0ba8432af5de96&amp;src=http://pic3.16pic.com/00/55/43/16pic_5543165_b.jpg
+</code></pre><h2 id="10、反斜杠"><a href="#10、反斜杠" class="headerlink" title="10、反斜杠\"></a>10、反斜杠\</h2><p>相当于<strong>反转义</strong>作用，使标记符号成为普通符号，如</p>
+<p>**<br>-–<br>##</p>
+<h2 id="代码如下-10"><a href="#代码如下-10" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>\**   
+\---   
+\##
+</code></pre><h2 id="11、符号-XXX"><a href="#11、符号-XXX" class="headerlink" title="11、符号`XXX`"></a>11、符号`XXX`</h2><hr>
+<p>起到标记的作用，如：<br><code>Ctrl+c</code></p>
+<h2 id="代码如下-11"><a href="#代码如下-11" class="headerlink" title="代码如下"></a>代码如下</h2><pre><code>`Ctrl+c`
+</code></pre><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><hr>
+<p>用<code>|</code>表示表格纵向边界，表头和表内容用<code>-</code>隔开，并可用<code>:</code>对齐设置，两边都有<code>:</code>则表示居中，默认是左对齐</p>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>链接</th>
+<th>sd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sda</td>
+<td>sda</td>
+<td>圣诞节快乐</td>
+</tr>
+</tbody>
+</table>
+<h1 id="谁在用Markdown？"><a href="#谁在用Markdown？" class="headerlink" title="谁在用Markdown？"></a>谁在用Markdown？</h1><hr>
+<ul>
+<li>Github（最大的同性交友网站）</li>
+<li>简书</li>
+<li>等等</li>
+</ul>
+
         </div>
       </div>
     </div>
