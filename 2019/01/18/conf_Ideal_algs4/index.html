@@ -100,7 +100,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2019-01-18</span>
-            <span class="time">21:21:53</span>
+            <span class="time">21:23:14</span>
           </span>
           
         </div>
@@ -118,8 +118,45 @@
 <hr>
 <h3 id="2、解压缩"><a href="#2、解压缩" class="headerlink" title="2、解压缩"></a>2、解压缩</h3><ul>
 <li>将<strong>algs4-data</strong>解压缩到指定目录，最好是直接存放在将来所建项目的out文件夹中，out文件夹保存的是编译文件<strong>.class</strong>文件</li>
-<li>将<strong>algs4.jar</strong>库函数保存在所安装java的目录里，如：<code></code></li>
 </ul>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%871.png?raw=true" alt="图片1"></p>
+<ul>
+<li>将<strong>algs4.jar</strong>库函数保存在所安装java的目录里，如：<code>C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\algs4.jar</code></li>
+</ul>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%872.png?raw=true" alt="图片2"></p>
+<hr>
+<h3 id="3、配置环境变量"><a href="#3、配置环境变量" class="headerlink" title="3、配置环境变量"></a>3、配置环境变量</h3><blockquote>
+<p><strong>此电脑</strong></p>
+<blockquote>
+<p><strong>属性</strong></p>
+<blockquote>
+<p><strong>高级系统设置</strong></p>
+<blockquote>
+<p><strong>环境变量</strong>（用户变量中的path，系统变量中的path，以及新增一个CLASSPATH环境变量,路径为上述<strong>algs4.jar</strong>的路径）</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>Click ok three times</strong></p>
+</blockquote>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%873.png?raw=true" alt="图片3"></p>
+<hr>
+<h3 id="4、配置IDEA"><a href="#4、配置IDEA" class="headerlink" title="4、配置IDEA"></a>4、配置IDEA</h3><h3 id="导入jar："><a href="#导入jar：" class="headerlink" title="导入jar："></a>导入jar：</h3><p><strong>file</strong>—&gt;<strong>Project Structure</strong>—&gt;<strong>Modules</strong>—-&gt;<strong>Dependencis</strong>—&gt;<strong>+</strong>—&gt;<strong>JARS or directories</strong>—&gt;<strong>添加algs4.jar的路径</strong>—&gt;<strong>ok</strong></p>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%874.png?raw=true" alt="图片4"></p>
+<hr>
+<h3 id="5、利用idea编译java程序"><a href="#5、利用idea编译java程序" class="headerlink" title="5、利用idea编译java程序"></a>5、利用idea编译java程序</h3><ul>
+<li>1、编译好的class文件会默认保存在<strong>out</strong>文件夹中，正是上述所说将<strong>algs4-data</strong>中的测试数据存放的地方</li>
+</ul>
+<ul>
+<li>2、你也可以使用<strong>Terminal</strong>终端来进行编译，编译的文件路径为<strong>../src/&lt;项目文件夹&gt;</strong>文件，命令为<code>javac XX.java</code>,编译后的class文件默认是在<strong>src/&lt;项目文件夹&gt;</strong>中，不是在out文件夹中！</li>
+</ul>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%875.png?raw=true" alt="图片5"></p>
+<hr>
+<h3 id="6、执行class文件"><a href="#6、执行class文件" class="headerlink" title="6、执行class文件"></a>6、执行class文件</h3><p>在执行文件的时候需要注意一点，就是由于我们的项目都是有package的，需要回退到你项目的那个目录才能执行class文件</p>
+<p>而且class文件的文件名要为<strong>&lt;项目名称&gt;.&lt;类名&gt;</strong></p>
+<p>例如：<code>java Sort.Example</code></p>
+<p><img src="https://github.com/lucklydog/lucklydog.github.io/blob/master/img/%E5%9B%BE%E7%89%876.png?raw=true" alt="图片6"></p>
+<hr>
+<h3 id="7、注意事项"><a href="#7、注意事项" class="headerlink" title="7、注意事项"></a>7、注意事项</h3><p><strong>通过Idea的Terminal终端可能不会随时更新环境变量，记得配置完环境变量要重启IDEA！</strong></p>
 
         </div>
       </div>
